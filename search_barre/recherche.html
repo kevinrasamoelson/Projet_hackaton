@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recherche</title>
+    <style>
+        #search{
+            border-radius: 30px;
+            border: 0px solid black;
+        }
+    </style>
+</head>
+<body style="background-color: aqua;">
+    <input type="search" id="search" value="" onchange="ouvrirPage">
+
+    <script>
+        function ouvrirPage(){
+            var a = document.getElementById('search').value;
+
+            if(a === "chat"){
+                window.open("/")
+            }
+        }
+    </script>
+</body>
+</html>
